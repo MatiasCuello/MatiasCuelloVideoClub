@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2A250C9-9AE2-496F-8BE3-FAF1EC22C743}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VideoClub.Windows</RootNamespace>
+    <AssemblyName>VideoClub.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEstadoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadoAE.Designer.cs">
+      <DependentUpon>frmEstadoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstados.Designer.cs">
+      <DependentUpon>frmEstados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidades.Designer.cs">
+      <DependentUpon>frmLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLocalidadesAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLocalidadesAE.Designer.cs">
+      <DependentUpon>frmLocalidadesAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProvincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProvincias.Designer.cs">
+      <DependentUpon>frmProvincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProvinciasAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProvinciasAE.Designer.cs">
+      <DependentUpon>frmProvinciasAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSoportesAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSoportesAE.Designer.cs">
+      <DependentUpon>frmSoportesAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSoportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSoportes.Designer.cs">
+      <DependentUpon>frmSoportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEstadoAE.resx">
+      <DependentUpon>frmEstadoAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstados.resx">
+      <DependentUpon>frmEstados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidades.resx">
+      <DependentUpon>frmLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLocalidadesAE.resx">
+      <DependentUpon>frmLocalidadesAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProvincias.resx">
+      <DependentUpon>frmProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProvinciasAE.resx">
+      <DependentUpon>frmProvinciasAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSoportesAE.resx">
+      <DependentUpon>frmSoportesAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSoportes.resx">
+      <DependentUpon>frmSoportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VideoClub.Entidades\VideoClub.Entidades.csproj">
+      <Project>{3fdd5f88-c880-4337-b394-20d2fe4b36d0}</Project>
+      <Name>VideoClub.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VideoClub.Servicios\VideoClub.Servicios.csproj">
+      <Project>{80b554bf-5153-4d2c-b10c-a7aed283d17d}</Project>
+      <Name>VideoClub.Servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Localidades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peliculas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Provincias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Socios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Provincias1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Provincias32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calificacion1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Generos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Localidades1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peliculas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Provincias2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Provincias321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Socios1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soporte1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

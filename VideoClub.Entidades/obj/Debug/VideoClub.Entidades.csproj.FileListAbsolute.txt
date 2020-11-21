@@ -1,0 +1,6 @@
+C:\Users\Matias\Desktop\VideoClub\VideoClub.Entidades\bin\Debug\VideoClub.Entidades.dll
+C:\Users\Matias\Desktop\VideoClub\VideoClub.Entidades\bin\Debug\VideoClub.Entidades.pdb
+C:\Users\Matias\Desktop\VideoClub\VideoClub.Entidades\obj\Debug\VideoClub.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Matias\Desktop\VideoClub\VideoClub.Entidades\obj\Debug\VideoClub.Entidades.dll
+C:\Users\Matias\Desktop\VideoClub\VideoClub.Entidades\obj\Debug\VideoClub.Entidades.pdb
+C:\Users\Matias\Desktop\VideoClub\VideoClub.Entidades\obj\Debug\VideoClub.Entidades.csprojAssemblyReference.cache
